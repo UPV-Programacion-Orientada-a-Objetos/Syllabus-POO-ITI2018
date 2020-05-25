@@ -29,10 +29,6 @@ public class CheckedExceptionExample {
             // código de recuperación del sistema
             e.printStackTrace();
         }
-        catch(IOException e) {
-            // código de recuperación del sistema
-            e.printStackTrace();
-        }
     }
 
 }

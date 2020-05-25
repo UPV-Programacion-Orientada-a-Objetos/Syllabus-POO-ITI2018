@@ -1,5 +1,6 @@
 package U1_ManejodeErroresyExcepciones.ejemplos;
 
+import java.io.FileNotFoundException;
 import java.util.Vector;
 
 public class ThrowExample {
@@ -14,7 +15,7 @@ public class ThrowExample {
             } catch (NotEvenIntegerException e) {
                 // se maneja realiza el flujo alternativo
                 e.printStackTrace();
-            }
+             }
         }
 
         vei.forEach(vecItem->System.out.println(vecItem));

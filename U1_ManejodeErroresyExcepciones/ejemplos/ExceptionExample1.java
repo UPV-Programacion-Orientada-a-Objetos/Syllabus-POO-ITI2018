@@ -6,11 +6,14 @@ public class ExceptionExample1 {
         int x = 11;
         try {
             if (x > 10) {
-                throw new RuntimeException("El valor de x esta fuera de rango: " + x);
+                throw new NullPointerException("El valor de x esta fuera de rango: " + x);
             }
         }
-        catch (RuntimeException ex) {
+        catch (NullPointerException ex) {
             System.out.println(ex.getMessage());
+            x = -1;
         }
+
+        System.out.println("x = " + x);    
     }
 }

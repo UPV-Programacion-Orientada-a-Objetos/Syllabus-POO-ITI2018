@@ -11,7 +11,7 @@ public class ExceptionExample2 {
             // procesamiento normal del método
             System.out.println("Proceso normal del método");
         }
-        catch(RuntimeException e) {
+        catch(NullPointerException e) {
             System.out.println(e.getMessage());
         }
         finally {

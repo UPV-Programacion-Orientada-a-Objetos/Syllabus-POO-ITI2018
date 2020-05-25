@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.GridPane?>
+
+<Scene fx:controller="com.spolancom.HelloWorldController2" xmlns:fx="http://javafx.com/fxml" width="350" height="150">
+    <GridPane alignment="center" hgap="15" vgap="5">
+        <padding>
+            <Insets top="20" right="20" bottom="20" left="20" />
+        </padding>
+        <Text fx:id="textUser" GridPane.rowIndex="0" GridPane.columnSpan="2">
+            <GridPane.halignment>center</GridPane.halignment>
+        </Text>
+        <Text fx:id="textDo" text="Do what has to be done here" GridPane.rowIndex="1" GridPane.columnSpan="2">
+            <GridPane.halignment>center</GridPane.halignment>
+        </Text>
+    </GridPane>
+</Scene>
