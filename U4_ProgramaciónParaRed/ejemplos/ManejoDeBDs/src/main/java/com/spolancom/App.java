@@ -18,13 +18,15 @@ public class App
 {
     public static void main( String[] args )
     {
-        // connectionWithDM();
-        // connectionWithPSG();
+        //Connection myc = connectionWithDM();
+        Connection myc = connectionWithPSG();
         // connectionPool();
 
         // executeCommands();
         // executeQueryCommands();
-        executeUpdateCommands();
+        // executeUpdateCommands();
+
+        System.out.println(myc);
     }
 
     public static void executeCommands() {
@@ -294,7 +296,7 @@ public class App
         String[] serversNames = {"localhost"};
 
         source.setServerNames(serversNames);
-        source.setDatabaseName("poo_db_test");
+        source.setDatabaseName("poo_db_tests");
         source.setUser("poo_student");
         // source.setPassword("xxx");
         source.setLoginTimeout(10);
@@ -319,7 +321,7 @@ public class App
 
         source.setServerNames(serversNames);
         source.setDatabaseName("poo_db_test");
-        source.setUser("poo_student");
+        source.setUser("poo_students");
         // source.setPassword("xxx");
         source.setLoginTimeout(10);
 
