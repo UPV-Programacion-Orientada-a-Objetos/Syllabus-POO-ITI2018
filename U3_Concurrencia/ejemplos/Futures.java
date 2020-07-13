@@ -157,8 +157,14 @@ public class Futures {
 
         public MyPrivateResult call() {
             try {
-                System.out.println(this.name + " is working...");
-                TimeUnit.MILLISECONDS.sleep(100);
+                int i = 0;
+                while (i < 10) {
+                    System.out.println(this.name + " is working...");
+                    TimeUnit.MILLISECONDS.sleep(100);
+                    i++;
+                    if (i < 9) i = 0;
+                }
+
                 System.out.println(this.name + " is done");
                 return new MyPrivateResult(name, 42.42);
             }

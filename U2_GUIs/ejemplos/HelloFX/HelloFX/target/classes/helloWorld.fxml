@@ -9,7 +9,7 @@
 <?import javafx.scene.control.TextField?>
 
 <Scene fx:controller="com.spolancom.HelloWorldController" xmlns:fx="http://javafx.com/fxml" width="350" height="200">
-    <GridPane alignment="center" hgap="15" vgap="5">
+    <GridPane alignment="center" hgap="15" vgap="5" >
         <padding>
             <Insets top="20" right="20" bottom="20" left="20" />
         </padding>

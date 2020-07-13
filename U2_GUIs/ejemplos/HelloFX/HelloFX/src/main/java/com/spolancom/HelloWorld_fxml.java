@@ -17,7 +17,9 @@ public class HelloWorld_fxml  extends Application {
     public void start(Stage primaryStage) {
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(new URL("file:src/main/resources/helloWorld.fxml"));
+            URL path = new URL("file:src/main/resources/helloWorld.fxml");
+            System.out.println(path.toString());
+            loader.setLocation(path);
             Scene scene = loader.load();
 
             primaryStage.setTitle("simple form example");

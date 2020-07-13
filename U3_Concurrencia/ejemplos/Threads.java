@@ -1,12 +1,13 @@
 
 package U3_Concurrencia.ejemplos;
 
+import java.util.Vector;
 import java.util.concurrent.TimeUnit;
 
 public class Threads {
 
     public static void main(String[] args) {
-        //runExtendedThreads();
+        // runExtendedThreads();
         runImplementsRunnable();
     }
 
@@ -30,16 +31,16 @@ public class Threads {
         thr1.start();
         Thread thr2 = new Thread(myRunnable2);
         thr2.setDaemon(true);
+        thr2.start();
         pauseOneSecond();
         myRunnable1.setParameter("exit");
         pauseOneSecond();
         System.out.println("Main thread exists");
-
     }
 
     private static void pauseOneSecond() {
         try {
-            TimeUnit.SECONDS.sleep(1);
+            TimeUnit.SECONDS.sleep(30);
         }
         catch(InterruptedException e) {
             e.printStackTrace();

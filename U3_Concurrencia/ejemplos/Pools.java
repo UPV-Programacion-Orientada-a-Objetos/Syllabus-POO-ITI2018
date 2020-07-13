@@ -9,15 +9,14 @@ public class Pools {
 
     public static void main(String[] args) {
 
-        //threadPool(Executors.newCachedThreadPool());
-        //threadPool(Executors.newFixedThreadPool(2));
+        // threadPool(Executors.newCachedThreadPool());
+        // threadPool(Executors.newFixedThreadPool(2));
         // threadPool(Executors.newScheduledThreadPool(2));
         threadPool(Executors.newWorkStealingPool(2));
-
     }
 
     private static void threadPool(ExecutorService pool) {
-        String[] names = {"One", "Two", "Three"};
+        String[] names = {"One", "Two", "Three", "Four", "Five", "six", "Seven", "Eight", "Nine", "ten"};
 
         for (int i = 0; i < names.length; i++) {
             pool.execute(new MyPrivateRunnable(names[i]));
