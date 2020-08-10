@@ -12,10 +12,10 @@ import java.util.concurrent.atomic.AtomicReference;
 public class Synchronization {
 
     public static void main(String[] args) {
-        // invokeAllCallables(new PrivateCalculatorNoSync());
+        invokeAllCallables(new PrivateCalculatorNoSync());
         // invokeAllCallables(new CalculatorAtomicRef());
         // invokeAllCallables(new CalculatorSyncMethod());
-        invokeAllCallables(new CalculatorSyncBlock());
+        // invokeAllCallables(new CalculatorSyncBlock());
     }
 
     private interface Calculator {

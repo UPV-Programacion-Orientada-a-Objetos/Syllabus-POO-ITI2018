@@ -7,7 +7,7 @@ public class UDPReceiver {
 
     public static void main(String[] args) {
         try (DatagramSocket ds = new DatagramSocket(3333)) {
-            DatagramPacket dp = new DatagramPacket(new byte[30], 30);
+            DatagramPacket dp = new DatagramPacket(new byte[50], 50);
             int i = 0;
 
             while (true) {
@@ -19,6 +19,7 @@ public class UDPReceiver {
                         break;
                     }
                 }
+                System.out.println();
             }
         }
         catch (Exception e) {
