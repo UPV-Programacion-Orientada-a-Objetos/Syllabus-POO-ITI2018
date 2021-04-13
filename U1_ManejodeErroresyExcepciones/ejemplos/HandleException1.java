@@ -9,7 +9,7 @@ public class HandleException1 {
     public static void main(String[] args) {
         String filePath = "U1_ManejodeErroresyExcepciones/ejemplos/lorem_ipsum.txt";
 
-        System.out.println(readFromFile_oldWay(filePath));
+        System.out.println(readFromFile(filePath));
     }
 
     public static String readFromFile(String path) {

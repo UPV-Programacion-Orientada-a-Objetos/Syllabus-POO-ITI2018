@@ -7,8 +7,8 @@ import java.util.concurrent.TimeUnit;
 public class Threads {
 
     public static void main(String[] args) {
-        // runExtendedThreads();
-        runImplementsRunnable();
+        runExtendedThreads();
+        //runImplementsRunnable();
     }
 
     private static void runExtendedThreads() {

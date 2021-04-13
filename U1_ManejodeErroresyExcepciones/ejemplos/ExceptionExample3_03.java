@@ -2,7 +2,7 @@ package U1_ManejodeErroresyExcepciones.ejemplos;
 
 import java.io.FileNotFoundException;
 
-public class ExceptionExample3 {
+public class ExceptionExample3_03 {
 
     public static void main(String[] args) {
 
@@ -10,16 +10,14 @@ public class ExceptionExample3 {
             metodo1(null);
         }
         catch(NullPointerException e) {
-           System.out.println(e.getClass().getCanonicalName());
            
            e.printStackTrace();
-           
-           if (e instanceof NullPointerException) {
-               System.out.println("La excepción pertenece a NullPointerException");
-           }
-           else {
-                System.out.println("Es otra excepción");
-           }
+        }
+        // catch (RuntimeException e) {
+        //     e.printStackTrace();
+        // }
+        catch (Exception e) {
+            e.printStackTrace();
         }
         
     }

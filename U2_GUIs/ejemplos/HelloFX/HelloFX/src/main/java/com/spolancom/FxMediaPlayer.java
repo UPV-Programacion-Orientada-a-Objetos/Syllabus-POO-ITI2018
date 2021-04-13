@@ -20,7 +20,7 @@ public class FxMediaPlayer extends Application {
     }
 
 
-    public void start(Stage primaryStage) {
+    public void start1(Stage primaryStage) {
 
         Text txt = new Text("What a beautiful movie!");
 
@@ -52,7 +52,7 @@ public class FxMediaPlayer extends Application {
     }
 
     //@Override
-    public void start1(Stage primaryStage) {
+    public void start(Stage primaryStage) {
         Text txt1 = new Text("What a beautiful music!");
         Text txt2 = new Text("If you don't hear music, turn up the volume.");
 

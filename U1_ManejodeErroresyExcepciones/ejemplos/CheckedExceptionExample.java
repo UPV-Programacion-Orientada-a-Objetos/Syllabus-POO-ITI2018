@@ -15,20 +15,20 @@ public class CheckedExceptionExample {
     public static void showFileContent(String path) {
         File file = new File(path);
 
-        try {
-            FileReader fr = new FileReader(file);
-            BufferedReader br = new BufferedReader(fr);
+        // try {
+        FileReader fr = new FileReader(file);
+        BufferedReader br = new BufferedReader(fr);
 
-            String line;
+        String line;
 
-            while ((line = br.readLine()) != null) {
-                System.out.println(line);
-            }
+        while ((line = br.readLine()) != null) {
+            System.out.println(line);
         }
-        catch (FileNotFoundException e) {
-            // código de recuperación del sistema
-            e.printStackTrace();
-        }
+        // }
+        // catch (FileNotFoundException e) {
+        //    // código de recuperación del sistema
+        //    e.printStackTrace();
+        // }
     }
 
 }
