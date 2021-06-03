@@ -56,7 +56,7 @@ public class FxMediaPlayer extends Application {
         Text txt1 = new Text("What a beautiful music!");
         Text txt2 = new Text("If you don't hear music, turn up the volume.");
 
-        File f = new File("src/main/resources/jb.mp3");
+        File f = new File("src/main/resources/jb.wav");
         System.out.println(f.toURI().toString());
         Media m = new Media(f.toURI().toString());
         MediaPlayer mp = new MediaPlayer(m);
