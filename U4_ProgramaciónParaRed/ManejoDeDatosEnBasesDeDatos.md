@@ -6,7 +6,7 @@ Usar JDBC significa escribir código Java que gestiona datos en una base de dato
 
 Naturalmente, sólo nos estamos refiriendo a las bases de datos que entienden SQL. Se denominan sistemas de gestión de **bases de datos relacionales o tabulares (Database Management Systems, DBMS)** y constituyen la gran mayoría de los DBMS utilizados actualmente, aunque también se utilizan algunas alternativas (por ejemplo, una base de datos de navegación y NoSQL).
 
-Los paquetes `java.sql` y `javax.sql` están incluidos en **Java Platform Standard Edition (Java SE)**. El paquete j`avax.sql` contiene la interfaz `DataSource` que admite la agrupación de sentencias, las transacciones distribuidas y los conjuntos de filas.
+Los paquetes `java.sql` y `javax.sql` están incluidos en **Java Platform Standard Edition (Java SE)**. El paquete `javax.sql` contiene la interfaz `DataSource` que admite la agrupación de sentencias, las transacciones distribuidas y los conjuntos de filas.
 
 Crear una base de datos implica los siguientes ocho pasos:
 
